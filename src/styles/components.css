@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
-  background-color: #222831;
+  background-color: #212121;
 }
 
 .main-nav p {
@@ -29,4 +29,21 @@
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #008a91;
+}
+
+.section-profile {
+  padding: 8rem 6.4rem;
+  display: flex;
+  gap: 6.4rem;
+  align-items: center;
+}
+
+.section-profile img {
+  width: 25%;
+  border-radius: 1000px;
+}
+
+.section-profile p {
+  font-size: 2rem;
+  line-height: 1.6;
 }

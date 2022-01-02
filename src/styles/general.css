@@ -10,4 +10,10 @@ html {
 
 body {
   color: #1ab5bc;
+  background-color: #323232;
+}
+
+section {
+  max-width: 130rem;
+  margin: 0 auto;
 }
