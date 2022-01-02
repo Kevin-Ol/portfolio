@@ -17,3 +17,8 @@ section {
   max-width: 130rem;
   margin: 0 auto;
 }
+
+i {
+  color: #fff;
+  font-size: 7rem;
+}

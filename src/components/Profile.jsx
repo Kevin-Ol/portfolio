@@ -6,7 +6,7 @@ function Profile() {
     <section id="#" class="section-profile">
       <img src={profileImage}></img>
       <div>
-        <p>Olá! Meu nome é Kevin e sou desenvolvedor Full-Stack. Comecei a estudar desenvolvimento web em abril de 2020 utilizando ReactJS para front-end e NodeJS para backend, e bancos de dados MySQL e MongoDB.
+        <p>Olá! Meu nome é Kevin e sou desenvolvedor Full-Stack. Comecei a estudar desenvolvimento web em abril de 2020 utilizando ReactJS para front-end, NodeJS para backend, bancos de dados MySQL e MongoDB.
         </p>
       </div>
     </section>

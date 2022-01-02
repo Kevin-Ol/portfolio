@@ -32,7 +32,7 @@
 }
 
 .section-profile {
-  padding: 8rem 6.4rem;
+  padding: 9.6rem 6.4rem;
   display: flex;
   gap: 6.4rem;
   align-items: center;
@@ -46,4 +46,47 @@
 .section-profile p {
   font-size: 2rem;
   line-height: 1.6;
+}
+
+.section-skills {
+  padding: 9.6rem 6.4rem;
+  font-size: 2rem;
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+  text-align: center;
+}
+
+.section-skills h2{
+  font-size: 3.6rem;
+}
+
+.section-skills p{
+  font-size: 1.8rem;
+  margin-bottom: 3.6rem;
+}
+
+.potential {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.skills-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-icon p {
+  font-size: 1.4rem;
 }
