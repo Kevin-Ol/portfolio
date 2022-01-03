@@ -5,7 +5,7 @@ function Navigation() {
       <ul>
         <li><a class="main-nav-link" href="#">Home</a></li>
         <li><a class="main-nav-link" href="#skills">Habilidades</a></li>
-        <li><a class="main-nav-link" href="#">Projetos</a></li>
+        <li><a class="main-nav-link" href="#projects">Projetos</a></li>
         <li><a class="main-nav-link" href="#">Contato</a></li>
       </ul>
     </nav>

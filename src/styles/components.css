@@ -51,20 +51,16 @@
 .section-skills {
   padding: 9.6rem 6.4rem;
   font-size: 2rem;
-  line-height: 1.6;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6.4rem;
   text-align: center;
 }
 
-.section-skills h2{
-  font-size: 3.6rem;
-}
-
-.section-skills p{
+.section-skills p {
   font-size: 1.8rem;
-  margin-bottom: 3.6rem;
+  margin-bottom: 3.2rem;
+  margin-top: 1rem;
 }
 
 .potential {
@@ -89,4 +85,72 @@
 
 .skill-icon p {
   font-size: 1.4rem;
+}
+
+.section-projects {
+  padding: 9.6rem 6.4rem;
+}
+
+.project-box {
+  font-size: 2rem;
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 2.4rem;
+  /* background-color: #cceff0; */
+  padding: 5rem 0;
+}
+
+.project-box:nth-child(2n + 1) img {
+  order: 2;
+}
+
+.project-box img {
+  max-width: 100%;
+}
+
+.project-box:nth-child(2) img {
+  max-width: 40%;
+}
+
+.project-box:nth-child(5) img {
+  max-width: 60%;
+}
+
+.project-box h3 {
+  margin-bottom: 1.6rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.project-links i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.project-links a:link,
+.project-links a:visited {
+  background-color: #001c1d;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  color: #e6f3f4
+}
+
+.project-links a:hover,
+.project-links a:active {
+  color: #008a91;
+}
+
+.project-links a:last-child {
+  display: flex;
+  align-items: center;
 }

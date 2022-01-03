@@ -14,11 +14,15 @@ body {
 }
 
 section {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
 i {
   color: #fff;
   font-size: 7rem;
+}
+
+h2 {
+  font-size: 3.6rem;
 }
