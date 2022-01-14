@@ -32,7 +32,6 @@
 }
 
 .section-profile {
-  padding: 9.6rem 6.4rem;
   display: flex;
   gap: 6.4rem;
   align-items: center;
@@ -49,7 +48,6 @@
 }
 
 .section-skills {
-  padding: 9.6rem 6.4rem;
   font-size: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -87,10 +85,6 @@
   font-size: 1.4rem;
 }
 
-.section-projects {
-  padding: 9.6rem 6.4rem;
-}
-
 .project-box {
   font-size: 2rem;
   line-height: 1.6;
@@ -99,7 +93,6 @@
   justify-items: center;
   align-items: center;
   gap: 2.4rem;
-  /* background-color: #cceff0; */
   padding: 5rem 0;
 }
 
@@ -109,6 +102,7 @@
 
 .project-box img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .project-box:nth-child(2) img {
@@ -153,4 +147,105 @@
 .project-links a:last-child {
   display: flex;
   align-items: center;
+}
+
+.contact-box {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+.contact-list ion-icon {
+  font-size: 4rem;
+}
+
+.contact-link {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.contact-link a:link,
+.contact-link a:visited {
+  text-decoration: none;
+  color: #1ab5bc;
+  transition: background-color 0.3s;
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.contact-link a:hover,
+.contact-link a:active {
+  color: #008a91;
+}
+
+.contact-form {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form p {
+  font-size: 2.4rem;
+}
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 80%;
+  padding: 1rem 0;
+}
+
+.contact-form input, textarea {
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgba(26, 180, 188, 0.9);
+}
+
+.contact-form button {
+  border: none;
+  background-color: #008a91;
+  color: #e6f3f4;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem 6.4rem;
+  border-radius: 5000px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 3.2rem
 }

@@ -1,12 +1,12 @@
 function Navigation() {
   return (
-    <nav class="main-nav">
+    <nav className="main-nav">
       <p>Kevin Oliveira</p>
       <ul>
-        <li><a class="main-nav-link" href="#">Home</a></li>
-        <li><a class="main-nav-link" href="#skills">Habilidades</a></li>
-        <li><a class="main-nav-link" href="#projects">Projetos</a></li>
-        <li><a class="main-nav-link" href="#">Contato</a></li>
+        <li><a className="main-nav-link" href="#">Home</a></li>
+        <li><a className="main-nav-link" href="#skills">Habilidades</a></li>
+        <li><a className="main-nav-link" href="#projects">Projetos</a></li>
+        <li><a className="main-nav-link" href="#contact">Contato</a></li>
       </ul>
     </nav>
   )

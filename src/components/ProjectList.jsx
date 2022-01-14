@@ -4,7 +4,7 @@ import { projects } from '../projects'
 
 function ProjectList() {
   return (
-    <section id="projects" class="section-projects">
+    <section id="projects" className="section-projects">
       <h2>Projetos</h2>
       { projects.map((project) => {
         const { title, image, description, web, git } = project;

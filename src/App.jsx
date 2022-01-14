@@ -5,6 +5,8 @@ import Navigation from './components/Navigation'
 import Profile from './components/Profile'
 import Skills from './components/Skills'
 import ProjectList from './components/ProjectList'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Profile />
       <Skills />
       <ProjectList />
+      <Contact />
+      <Footer />
     </>
   )
 }

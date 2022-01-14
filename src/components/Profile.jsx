@@ -3,7 +3,7 @@ import profileImage from '../images/perfil.png'
 
 function Profile() {
   return (
-    <section id="#" class="section-profile">
+    <section id="#" className="section-profile">
       <img src={profileImage}></img>
       <div>
         <p>
