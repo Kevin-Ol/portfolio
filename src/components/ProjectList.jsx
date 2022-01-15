@@ -9,6 +9,7 @@ function ProjectList() {
       { projects.map((project) => {
         const { title, image, description, web, git } = project;
         return <Project
+          key={ title }
           title={ title }
           image={ image }
           description={ description }

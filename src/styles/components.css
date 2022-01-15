@@ -3,7 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
-  background-color: #212121;
+  height: 8rem;
+  background-color: var(--nav);
 }
 
 .main-nav p {
@@ -23,12 +24,12 @@
   text-decoration: none;
   font-size: 1.8rem;
   transition: background-color 0.3s;
-  color: #cceff0;
+  color: var(--navlink);
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #008a91;
+  color: var(--navhover);
 }
 
 .section-profile {
@@ -45,6 +46,7 @@
 .section-profile p {
   font-size: 2rem;
   line-height: 1.6;
+  padding: 2rem 4rem;
 }
 
 .section-skills {
@@ -93,11 +95,15 @@
   justify-items: center;
   align-items: center;
   gap: 2.4rem;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .project-box:nth-child(2n + 1) img {
   order: 2;
+}
+
+.project-box > div {
+  padding: 1.6rem 2.4rem;
 }
 
 .project-box img {
@@ -131,17 +137,18 @@
 
 .project-links a:link,
 .project-links a:visited {
-  background-color: #001c1d;
+  background-color: var(--buttonbg);
   padding: 1rem 4rem;
   text-decoration: none;
   font-size: 1.8rem;
   border-radius: 8px;
-  color: #e6f3f4
+  color: var(--buttontext);
+  transition: all 0.3s;
 }
 
 .project-links a:hover,
 .project-links a:active {
-  color: #008a91;
+  box-shadow: inset 0 0 0 3px var(--buttontext);
 }
 
 .project-links a:last-child {
@@ -176,7 +183,7 @@
 .contact-link a:link,
 .contact-link a:visited {
   text-decoration: none;
-  color: #1ab5bc;
+  color: var(--text);
   transition: background-color 0.3s;
   font-size: 1.8rem;
   display: flex;
@@ -186,7 +193,13 @@
 
 .contact-link a:hover,
 .contact-link a:active {
-  color: #008a91;
+  color: var(--navlink);
+}
+
+.contact-form, .project-box > div, .section-profile p {
+  background-color: var(--lightbg);
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form {
@@ -195,6 +208,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 4rem 0;
 }
 
 .contact-form p {
@@ -228,8 +242,8 @@
 
 .contact-form button {
   border: none;
-  background-color: #008a91;
-  color: #e6f3f4;
+  background-color: var(--buttonbg);
+  color: var(--buttontext);
   font-size: 1.8rem;
   font-weight: 600;
   padding: 1.2rem 6.4rem;
@@ -240,12 +254,22 @@
 }
 
 .contact-form button:hover {
-  background-color: #fff;
-  color: #555;
+  box-shadow: inset 0 0 0 3px var(--buttontext);
 }
 
 footer {
   text-align: center;
   font-size: 1.4rem;
   padding-bottom: 3.2rem
+}
+
+.sticky .main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.sticky .section-profile {
+  margin-top: 8rem;
 }

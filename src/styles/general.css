@@ -1,3 +1,16 @@
+:root {
+  --nav: #0F0E0E;
+  --text: #72fff4;
+  --darktext: #5bccc3;
+  --darkbg: #212121;
+  --lightbg: #323232;
+  --icon: #fff;
+  --buttonbg: #5b4faa;
+  --buttontext: #e8e6f3;
+  --navlink: #9147ff;
+  --navhover: #f4edff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +22,9 @@ html {
 }
 
 body {
-  color: #1ab5bc;
-  background-color: #323232;
+  color: var(--text);
+  background-color: var(--darkbg);
+  font-family: "Heebo", sans-serif;
 }
 
 section {
@@ -20,10 +34,22 @@ section {
 }
 
 i {
-  color: #fff;
+  color: var(--icon);
   font-size: 7rem;
 }
 
 h2 {
   font-size: 3.6rem;
+}
+
+h1,h2 {
+  color: var(--navlink);
+}
+
+nav p {
+  color: var(--navlink);
+}
+
+h3 {
+  color: var(--darktext);
 }
