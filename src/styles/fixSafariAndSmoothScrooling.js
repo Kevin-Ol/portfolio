@@ -1,4 +1,10 @@
-const allLinks = document.querySelectorAll('a:link');
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+btnNavEl.addEventListener('click', () => {
+  headerEl.classList.toggle('nav-open');
+});
+
+const allLinks = document.querySelectorAll('.main-nav-link');
 allLinks.forEach((link) => link.addEventListener('click', (e) => {
     e.preventDefault();
     const href = link.getAttribute('href');
@@ -13,7 +19,7 @@ allLinks.forEach((link) => link.addEventListener('click', (e) => {
       sectionEl.scrollIntoView({behavior: 'smooth'})
     }
 
-    // if(headerEl.classList.contains('nav-open')) headerEl.classList.remove('nav-open')
+    if(headerEl.classList.contains('nav-open')) headerEl.classList.remove('nav-open')
   }
 ));
 

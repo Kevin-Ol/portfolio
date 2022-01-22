@@ -1,22 +1,24 @@
-.main-nav {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 0 6rem;
   height: 8rem;
   background-color: var(--nav);
+  position: relative;
 }
 
-.main-nav p {
+.header p {
   font-size: 3rem;
   font-weight: 500;
 }
 
-.main-nav ul {
+.main-nav-list {
   display: flex;
   list-style: none;
   gap: 2.4rem;
   font-size: 1.6rem;
+  align-items: center;
 }
 
 .main-nav-link:link,
@@ -30,6 +32,23 @@
 .main-nav-link:hover,
 .main-nav-link:active {
   color: var(--navhover);
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--buttontext);
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
 }
 
 .section-profile {
@@ -72,7 +91,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
-  gap: 1.2rem;
 }
 
 .skill-icon {
@@ -80,7 +98,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
 .skill-icon p {
@@ -148,7 +165,7 @@
 
 .project-links a:hover,
 .project-links a:active {
-  box-shadow: inset 0 0 0 3px var(--buttontext);
+  box-shadow: inset 0 0 0 0.3rem var(--buttontext);
 }
 
 .project-links a:last-child {
@@ -199,7 +216,7 @@
 .contact-form, .project-box > div, .section-profile p {
   background-color: var(--lightbg);
   border-radius: 8px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.5);
 }
 
 .contact-form {
@@ -254,7 +271,12 @@
 }
 
 .contact-form button:hover {
-  box-shadow: inset 0 0 0 3px var(--buttontext);
+  box-shadow: inset 0 0 0 0.3rem var(--buttontext);
+}
+
+.contact-box p {
+  font-size: 3rem;
+  margin: 0 auto;
 }
 
 footer {
@@ -263,11 +285,12 @@ footer {
   padding-bottom: 3.2rem
 }
 
-.sticky .main-nav {
+.sticky .header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
+  box-shadow: 0 0 3rem rgba(91, 79, 170, 0.2);
 }
 
 .sticky .section-profile {

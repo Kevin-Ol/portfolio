@@ -49,7 +49,6 @@ function ContactForm() {
           id="message"
           name="message"
           rows="8"
-          cols="50"
         />
         <ValidationError 
           prefix="Message" 

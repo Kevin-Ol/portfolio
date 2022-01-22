@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles/general.css'
 import './styles/components.css'
+import './styles/queries.css'
 import Navigation from './components/Navigation'
 import Profile from './components/Profile'
 import Skills from './components/Skills'
