@@ -3,6 +3,7 @@ import letMeAsk from './images/let-me-ask.png'
 import trivia from './images/trivia.png'
 import cookmaster from './images/undraw_cooking_lyxy.svg'
 import storeManager from './images/undraw_logistics_x-4-dc.svg'
+import blogsAPI from './images/undraw_publish_post_re_wmql.svg'
 
 export const projects = [
   {
@@ -25,6 +26,12 @@ export const projects = [
     description: "Jogo de perguntas e respostas tematizadas, com alternativas e sistema de ranqueamento.",
     web: "https://kevin-ol.github.io/project-trivia-react-redux/",
     git: "https://github.com/Kevin-Ol/project-trivia-react-redux"
+  },
+  {
+    title: "Blogs API",
+    image: blogsAPI,
+    description: "API para cadastro, e autenticação de usuários, que podem criar categorias e posts relacionados à elas.",
+    git: "https://github.com/Kevin-Ol/project-blogs-api"
   },
   {
     title: "Cookmaster",

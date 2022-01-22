@@ -133,6 +133,10 @@
 }
 
 .project-box:nth-child(5) img {
+  max-width: 70%;
+}
+
+.project-box:nth-child(6) img {
   max-width: 60%;
 }
 
