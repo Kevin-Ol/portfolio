@@ -1,6 +1,6 @@
 import recipesApp from './images/recipes-app.png'
 import letMeAsk from './images/let-me-ask.png'
-import trivia from './images/trivia.png'
+import trivia from './images/trivia.jpg'
 import cookmaster from './images/undraw_cooking_lyxy.svg'
 import storeManager from './images/undraw_logistics_x-4-dc.svg'
 import blogsAPI from './images/undraw_publish_post_re_wmql.svg'
