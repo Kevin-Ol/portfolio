@@ -8,8 +8,13 @@ import Skills from './components/Skills'
 import ProjectList from './components/ProjectList'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import script from './styles/fixSafariAndSmoothScrooling'
 
 function App() {
+  useEffect(() => {
+    script();
+  }, [])
+
   return (
     <>
       <Navigation />
